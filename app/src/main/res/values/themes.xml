@@ -1,8 +1,19 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.StoryLeave" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+    <style name="Base.Theme.StoryLeave" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/sl_color_brand</item>
+        <item name="colorOnPrimary">@color/sl_color_text_on_brand</item>
+        <item name="colorPrimaryContainer">@color/sl_color_brand_soft</item>
+        <item name="colorOnPrimaryContainer">@color/sl_color_brand</item>
+        <item name="colorSurface">@color/sl_color_bg_canvas</item>
+        <item name="colorOnSurface">@color/sl_color_text_primary</item>
+        <item name="colorOutline">@color/sl_color_border_default</item>
+        <item name="colorError">@color/sl_color_error</item>
+        <item name="android:colorAccent">@color/sl_color_brand</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:navigationBarColor">@color/sl_color_bg_canvas</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
     </style>
 
     <style name="Theme.StoryLeave" parent="Base.Theme.StoryLeave" />
