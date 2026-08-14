@@ -10,20 +10,21 @@ import androidx.viewbinding.ViewBinding
 abstract class BaseBindingFragment<VB : ViewBinding>(
     private val inflate: (LayoutInflater, ViewGroup?, Boolean) -> VB,
 ) : Fragment() {
-    private var _binding: VB? = null
+    private var viewBinding: VB? = null
     protected val binding: VB
-        get() = checkNotNull(_binding) { "Binding is only valid between onCreateView and onDestroyView." }
+        get() = checkNotNull(viewBinding) { "Binding is only valid between onCreateView and onDestroyView." }
 
     final override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View = inflate(inflater, container, false)
-        .also { _binding = it }
-        .root
+    ): View =
+        inflate(inflater, container, false)
+            .also { viewBinding = it }
+            .root
 
     override fun onDestroyView() {
-        _binding = null
+        viewBinding = null
         super.onDestroyView()
     }
 }

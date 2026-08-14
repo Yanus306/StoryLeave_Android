@@ -41,3 +41,8 @@ kr.ac.anu.storyleave
 - 화면은 `BaseBindingFragment`를 상속해 ViewBinding 생명주기를 관리합니다.
 - `app_nav_graph` 아래에서 인증과 메인 그래프를 분리하며, 메인 하단 탭은 폼·하이라이트·마이로 구성합니다.
 - 피그마에 없는 다크 테마를 임의로 만들지 않도록 현재는 라이트 테마만 제공합니다.
+
+## Code style
+
+- `./gradlew ktlintCheck`로 Kotlin 코드 스타일을 검사합니다.
+- `./gradlew ktlintFormat`으로 자동 수정 가능한 스타일 문제를 정리합니다.

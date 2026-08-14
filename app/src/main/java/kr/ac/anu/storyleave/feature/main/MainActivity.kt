@@ -22,8 +22,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navHostFragment = supportFragmentManager
-            .findFragmentById(R.id.main_nav_host) as NavHostFragment
+        val navHostFragment =
+            supportFragmentManager
+                .findFragmentById(R.id.main_nav_host) as NavHostFragment
         val navController = navHostFragment.navController
 
         binding.bottomNavigation.setupWithNavController(navController)
@@ -39,10 +40,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private companion object {
-        val MAIN_DESTINATIONS = setOf(
-            R.id.formFragment,
-            R.id.highlightFragment,
-            R.id.myFragment,
-        )
+        val MAIN_DESTINATIONS =
+            setOf(
+                R.id.formFragment,
+                R.id.highlightFragment,
+                R.id.myFragment,
+            )
     }
 }

@@ -9,10 +9,14 @@ import kr.ac.anu.storyleave.core.ui.BaseBindingFragment
 import kr.ac.anu.storyleave.databinding.FragmentAuthEntryBinding
 
 @AndroidEntryPoint
-class AuthEntryFragment : BaseBindingFragment<FragmentAuthEntryBinding>(
-    FragmentAuthEntryBinding::inflate,
-) {
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+class AuthEntryFragment :
+    BaseBindingFragment<FragmentAuthEntryBinding>(
+        FragmentAuthEntryBinding::inflate,
+    ) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         super.onViewCreated(view, savedInstanceState)
         binding.continueButton.setOnClickListener {
             findNavController().navigate(R.id.action_authEntryFragment_to_main_nav_graph)

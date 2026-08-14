@@ -13,7 +13,6 @@
         <item name="android:navigationBarColor">@color/sl_color_bg_canvas</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">true</item>
-        <item name="android:windowLightNavigationBar">true</item>
     </style>
 
     <style name="Theme.StoryLeave" parent="Base.Theme.StoryLeave" />
