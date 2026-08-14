@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sl_color_bg_canvas"
+    android:paddingHorizontal="@dimen/sl_screen_horizontal_margin">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auth_entry_title"
+        android:textAppearance="@style/TextAppearance.StoryLeave.Headline"
+        app:layout_constraintBottom_toTopOf="@id/continue_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continue_button"
+        style="@style/Widget.StoryLeave.Button.Primary"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/sl_button_height"
+        android:layout_marginTop="@dimen/sl_spacing_xl"
+        android:text="@string/continue_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

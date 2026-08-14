@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/formFragment">
+
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="kr.ac.anu.storyleave.feature.form.FormFragment"
+        android:label="@string/tab_form" />
+    <fragment
+        android:id="@+id/highlightFragment"
+        android:name="kr.ac.anu.storyleave.feature.highlight.HighlightFragment"
+        android:label="@string/tab_highlight" />
+    <fragment
+        android:id="@+id/myFragment"
+        android:name="kr.ac.anu.storyleave.feature.my.MyFragment"
+        android:label="@string/tab_my" />
+</navigation>

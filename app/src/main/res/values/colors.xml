@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="sl_color_brand">#087F70</color>
+    <color name="sl_color_brand_active">#0B8F7C</color>
+    <color name="sl_color_brand_soft">#D9F7EF</color>
+    <color name="sl_color_border_brand">#19A98F</color>
+    <color name="sl_color_text_primary">#101815</color>
+    <color name="sl_color_text_secondary">#7C8A83</color>
+    <color name="sl_color_text_on_brand">#FFFFFF</color>
+    <color name="sl_color_border_default">#CDD6D1</color>
+    <color name="sl_color_bg_canvas">#FFFFFF</color>
+    <color name="sl_color_bg_elevated">#FFFFFF</color>
+    <color name="sl_color_bg_subtle">#F7F9F8</color>
+    <color name="sl_color_error">#E94E4E</color>
+    <color name="sl_color_transparent">#00000000</color>
 </resources>

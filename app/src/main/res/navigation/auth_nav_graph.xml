@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/auth_nav_graph"
+    app:startDestination="@id/authEntryFragment">
+
+    <fragment
+        android:id="@+id/authEntryFragment"
+        android:name="kr.ac.anu.storyleave.feature.auth.AuthEntryFragment"
+        android:label="Auth entry">
+        <action
+            android:id="@+id/action_authEntryFragment_to_main_nav_graph"
+            app:destination="@id/main_nav_graph"
+            app:popUpTo="@id/auth_nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
